@@ -191,6 +191,117 @@ body {
     transition: all .5s;
 }
 
+.game {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    width: 1000px;
+
+}
+
+.yourPicked {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    align-items: center;
+    & h4 {
+        color: #FFF;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+        font-family: "Barlow Semi Condensed";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: 3px;
+    }
+
+    & img {
+        width: 290px;
+    }
+}
+
+.otherPicked {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    align-items: center;
+    & h4 {
+        color: #FFF;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+        font-family: "Barlow Semi Condensed";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: 3px;
+    }
+}
+
+.noPick {
+    width: 224px;
+    height: 224px;
+    background-color: #172340;
+    border-radius: 50%;
+    margin-top: 37px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+
+    & h2 {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+        font-family: "Barlow Semi Condensed";
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    & button {
+        background-color: #fff;
+        border-radius: 8px;
+        border: none;
+        padding: 15px 60px;
+        color: #3B4262;
+        font-family: "Barlow Semi Condensed";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.5px;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        color: #db304e;
+        transition: all .5s;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (width < 1100px) {
 
     .container {
@@ -248,4 +359,19 @@ body {
         right: auto;
     }
 
+}
+
+@media (width < 500px) {
+    .rules {
+        width: 100%;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 110px;
+    }
+
+    .rulesHeader {
+        justify-content: space-evenly;
+    }
 }

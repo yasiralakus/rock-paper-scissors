@@ -7,12 +7,12 @@ export default function Home() {
             <div className="home">
 
                 <div className="top">
-                    <button><img src="./img/paper.png" alt="" /></button>
-                    <button><img src="./img/scissors.png" alt="" /></button>
+                    <button><img src="./img/paper.svg" alt="" /></button>
+                    <button><img src="./img/scissors.svg" alt="" /></button>
                 </div>
 
                 <div className="bottom">
-                    <button><img src="./img/rock.png" alt="" /></button>
+                    <button><img src="./img/rock.svg" alt="" /></button>
                 </div>
 
             </div>
